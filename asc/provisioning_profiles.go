@@ -115,8 +115,8 @@ type ListProfilesQuery struct {
 	FieldsCertificates []string `url:"fields[certificates],omitempty"`
 	FieldsDevices      []string `url:"fields[devices],omitempty"`
 	FieldsProfiles     []string `url:"fields[profiles],omitempty"`
-	FieldsID           []string `url:"fields[id],omitempty"`
-	FieldsName         []string `url:"fields[name],omitempty"`
+	FieldsID           []string `url:"filter[id],omitempty"`
+	FilterName         []string `url:"fields[name],omitempty"`
 	FieldsBundleIDs    []string `url:"fields[bundleIds],omitempty"`
 	Include            []string `url:"include,omitempty"`
 	Limit              int      `url:"limit,omitempty"`
